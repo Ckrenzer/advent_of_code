@@ -1,0 +1,25 @@
+(THESE ARE NOTES ON THE EXAMPLE INPUT)
+
+   S    a    b    q    p    o    n    m 
+   a    b    c    r    y    x    x    l 
+   a    c    c    s    z    E    x    k 
+   a    c    c    t    u    v    w    j 
+   a    b    d    e    f    g    h    i 
+
+The original grid with the values replaced by movement markers:
+ 101  111  110  111   11   11   11  110 
+1101 1111 1110 1110 1111 1011 1111 1100 
+1100 1111 1110 1110 1111    E 1101 1100 
+1100 1111 1110 1111  111  111 1111 1100 
+1001 1010 1011   11   11   11   11 1010 
+
+The coordinate system:
+(1, 1) (1, 2) (1, 3) (1, 4) (1, 5) (1, 6) (1, 7) (1, 8) 
+(2, 1) (2, 2) (2, 3) (2, 4) (2, 5) (2, 6) (2, 7) (2, 8) 
+(3, 1) (3, 2) (3, 3) (3, 4) (3, 5) (3, 6) (3, 7) (3, 8) 
+(4, 1) (4, 2) (4, 3) (4, 4) (4, 5) (4, 6) (4, 7) (4, 8) 
+(5, 1) (5, 2) (5, 3) (5, 4) (5, 5) (5, 6) (5, 7) (5, 8) 
+
+
+A winning path:
+rrddddrrrrruuuulllldddrrruulldr
