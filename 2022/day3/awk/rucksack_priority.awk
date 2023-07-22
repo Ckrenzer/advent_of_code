@@ -36,6 +36,7 @@ BEGIN{
     }
 }
 
-END{
+ENDFILE{
     print "Sum of all priority items found in both compartments:", matched_priority_sum
+    matched_priority_sum = 0
 }

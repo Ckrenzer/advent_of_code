@@ -12,9 +12,9 @@ BEGIN{
 }
 
 # Find the sum of all priorities of items appearing in each group of three
-NR % 3 == 1 { split($0,  first_elf_items,  "") }
-NR % 3 == 2 { split($0,  second_elf_items,  "") }
-NR % 3 == 0 {
+FNR % 3 == 1 { split($0,  first_elf_items,  "") }
+FNR % 3 == 2 { split($0,  second_elf_items,  "") }
+FNR % 3 == 0 {
     split($0,  third_elf_items,  "")
     # 'empty' out the array
     for(k in matches){
@@ -43,6 +43,7 @@ NR % 3 == 0 {
     }
 }
 
-END{
+ENDFILE{
     print "Sum of all badge priorities:", matched_priority_sum
+    matched_priority_sum = 0
 }
