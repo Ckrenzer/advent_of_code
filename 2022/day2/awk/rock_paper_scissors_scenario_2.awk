@@ -31,6 +31,7 @@ BEGIN{
     total_score += my_value + ((my_value == opponent_value) * 3) + ((my_value == 1 && opponent_value == 3 || my_value == 2 && opponent_value == 1 || my_value == 3 && opponent_value == 2) * 6)
 }
 
-END{
+ENDFILE{
     print "Final score:", total_score
+    total_score = 0
 }
